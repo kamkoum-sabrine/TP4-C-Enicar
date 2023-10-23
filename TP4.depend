@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1698094910 source:f:\1ere ingénieur informatique\tp c\tp4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

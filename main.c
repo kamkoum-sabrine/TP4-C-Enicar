@@ -58,7 +58,7 @@ int main()
 
         strcpy(ils, ch2);
         strcpy(je, ch2);
-        strcat(ils, "e");
+        strcat(je, "e");
         strcat(ils, "ent");
     }
 

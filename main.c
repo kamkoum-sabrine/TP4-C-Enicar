@@ -41,7 +41,7 @@ int main()
 
     /**Exercice 5**/
 
-    char ch[20];
+    /**char ch[20];
     char ch2[20];
     char ils[40], je[40];
     int i;
@@ -62,6 +62,21 @@ int main()
         strcat(ils, "ent");
     }
 
-    printf("\nIls %s\nJe %s", ils,je);
+    printf("\nIls %s\nJe %s", ils,je);**/
+    /**Exercice7**/
+      char ch1[100];
+    char ch2[100];
+
+    printf("Saisissez une chaîne de caractères ch1 : ");
+    scanf("%s", ch1);
+
+    printf("Saisissez une chaîne de caractères ch2 : ");
+    scanf("%s", ch2);
+
+    if (strstr(ch1, ch2) != NULL) {
+        printf("La chaîne ch2 se trouve dans la chaîne ch1.\n");
+    } else {
+        printf("La chaîne ch2 ne se trouve pas dans la chaîne ch1.\n");
+    }
     return 0;
 }

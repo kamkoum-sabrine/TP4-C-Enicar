@@ -40,26 +40,28 @@ int main()
     }**/
 
     /**Exercice 5**/
-   /** char ch1[]="sabrine";
-    char ch2[]="sabrine";
-    printf("%d",strcmp(ch1,ch2));**/
-    /**Exercice6**/
-    char ch[20],* ch2[20];
-    char je[40],ils[40];
+
+    char ch[20];
+    char ch2[20];
+    char ils[40], je[40];
     int i;
 
-    printf("Donner un verbe ");
-    scanf("%s",&ch);
-    printf("%c",ch[strlen(ch)-1]);
-    if ((ch[strlen(ch)-1]=='r')&&(ch[strlen(ch)-2]=='e')){
-        for (i=0;i<strlen(ch)-2;i++){
-            ch2[i]=ch[i];
-           /// strcat(ch2,ch[i]);
+    printf("Donner un verbe : ");
+    scanf("%s", ch);
+
+    if ((ch[strlen(ch) - 1] == 'r') && (ch[strlen(ch) - 2] == 'e')) {
+        for (i = 0; i < strlen(ch) - 2; i++) {
+            ch2[i] = ch[i];
+           /// printf("%c", ch2[i]);
         }
-        printf("%s",ch2);
-         strcat(ils,ch2);
-         strcat(ils,"ent");
+        ch2[i] = '\0';
+
+        strcpy(ils, ch2);
+        strcpy(je, ch2);
+        strcat(ils, "e");
+        strcat(ils, "ent");
     }
-    printf("\nIls %s\n",ils);
+
+    printf("\nIls %s\nJe %s", ils,je);
     return 0;
 }
